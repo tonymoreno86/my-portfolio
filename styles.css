@@ -47,6 +47,18 @@ html {
     outline: none;
 }
 
+@media (max-width: 576px) {
+    #navbar .navbar-brand {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #navbar .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
 /*-------- Hero --------*/
 
 #hero {
@@ -89,13 +101,18 @@ html {
 
 @media (max-width: 576px) {
     #hero h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     #hero h3 {
         font-size: 1.6rem
     }
+}
 
+@media (max-width: 400px) {
+    #hero h1 {
+        font-size: 1.4rem;
+    }
 }
 
 /*-------- Portfolio  --------*/
