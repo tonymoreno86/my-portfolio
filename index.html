@@ -13,6 +13,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
@@ -20,7 +23,7 @@
     <link href="fontawesome/css/all.css" rel="stylesheet">
 
     <!-- Stylesheet -->
-    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
 
     <title>Anthony Moreno | Portfolio</title>
 </head>
@@ -50,14 +53,14 @@
     <section id="hero">
         <div class="container">
             <div class="d-flex align-items-center flex-column text-white">
-                <img src="images/avatar.svg" class="img-fluid align-middle">
-                <h1 class="mt-3 text-uppercase">Welcome to my Page</h1>
+                <img src="images/avatar.svg" class="img-fluid align-middle wow bounceInLeft" data-wow-delay=".3s" data-wow-duration=".7s">
+                <h1 class="mt-3 text-uppercase wow bounceInRight" data-wow-delay=".3s">Welcome to my Page</h1>
                 <div class="divider-custom d-flex align-items-center justify-content-center">
-                    <div class="divider-custom-line"></div>
-                    <i class="far fa-file-code fa-2x"></i>
-                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-line wow bounceInRight" data-wow-delay=".3s"></div>
+                    <i class="far fa-file-code fa-2x wow bounceInRight" data-wow-delay=".3s"></i>
+                    <div class="divider-custom-line wow bounceInRight" data-wow-delay=".3s"></div>
                 </div>
-                <h3>Web Developer</h3>
+                <h3 class="wow bounceInRight" data-wow-delay=".3s">Web Developer</h3>
             </div>
         </div>
     </section>
@@ -66,11 +69,11 @@
     <!-- Portfolio -->
     <section id="portfolio">
         <div class="container">
-            <h2 class="text-center text-uppercase pb-2">Portfolio</h2>
+            <h2 class="text-center text-uppercase pb-2 wow fadeIn" data-wow-delay=".3s">Portfolio</h2>
             <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
-                <div class="divider-custom-line"></div>
-                <i class="far fa-file-code fa-2x"></i>
-                <div class="divider-custom-line"></div>
+                <div class="divider-custom-line wow fadeIn" data-wow-delay=".3s"></div>
+                <i class="far fa-file-code fa-2x wow fadeIn" data-wow-delay=".3s"></i>
+                <div class="divider-custom-line wow fadeIn" data-wow-delay=".3s"></div>
             </div>
             <div class="row">
                 <div class="col-md-6 col-lg-4">
@@ -80,7 +83,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/apple.png" class="img-fluid">
+                        <img src="images/apple.png" class="img-fluid wow lightSpeedIn" data-wow-delay=".5s" data-wow-duration=".6s">
                     </div>
                 </div>
 
@@ -91,7 +94,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/newsweek.png" class="img-fluid">
+                        <img src="images/newsweek.png" class="img-fluid wow lightSpeedIn" data-wow-delay="1s" data-wow-duration=".6s">
                     </div>
                 </div>
 
@@ -102,7 +105,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/airbnb.png" class="img-fluid">
+                        <img src="images/airbnb.png" class="img-fluid wow lightSpeedIn" data-wow-delay="1.5s" data-wow-duration=".6s">
                     </div>
                 </div>
             </div>
@@ -115,7 +118,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/vtc.png" class="img-fluid">
+                        <img src="images/vtc.png" class="img-fluid wow lightSpeedIn" data-wow-delay="2s" data-wow-duration=".6s">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -125,7 +128,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/dicegame.png" class="img-fluid">
+                        <img src="images/dicegame.png" class="img-fluid wow lightSpeedIn" data-wow-delay="2.5s" data-wow-duration=".6s">
                     </div>
                 </div>
 
@@ -136,7 +139,7 @@
                                 <i class="fas fa-code fa-2x"></i>
                             </div>
                         </div>
-                        <img src="images/keeperApp.png" class="img-fluid">
+                        <img src="images/keeperApp.png" class="img-fluid wow lightSpeedIn" data-wow-delay="3s" data-wow-duration=".6s">
                     </div>
                 </div>
             </div>
@@ -311,7 +314,7 @@
 
     <!-- About Me -->
     <section id="about">
-        <div class="container">
+        <div class="container wow fadeIn" data-wow-delay=".5s">
             <h2 class="text-center text-uppercase pb-2">About Me</h2>
             <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
                 <div class="divider-custom-line"></div>
@@ -336,7 +339,7 @@
 
     <!-- Contact  -->
     <section id="contact">
-        <div class="container">
+        <div class="container wow zoomIn" data-wow-delay=".5s">
             <h2 class="text-center text-uppercase pb-2">Contact Me</h2>
             <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
                 <div class="divider-custom-line"></div>
@@ -344,7 +347,7 @@
                 <div class="divider-custom-line"></div>
             </div>
             <div class="row">
-                <div class="col-lg-8 m-auto ">
+                <div class="col-lg-8 m-auto">
                     <form action="https://formspree.io/xjvewyge" method="POST">
                         <div class="form-group">
                             <label for="name"></label>
@@ -387,10 +390,12 @@
 
                 <div class="col-lg-4 mb-5 text-center">
                     <h3 class="text-uppercase pb-2">Around the Web</h3>
-                    <a href="https://www.facebook.com/BartndrTony?ref=bookmarks" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/tonym03/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/anthony-moreno-26858b5a/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/TonyM_03" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
+                    <div class="wow heartBeat" data-wow-delay=".5" data-wow-iteration="4">
+                        <a href="https://www.facebook.com/BartndrTony?ref=bookmarks" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/tonym03/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/anthony-moreno-26858b5a/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/TonyM_03" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
 
                 <div class="col-lg-4 mb-5 text-center">
@@ -405,7 +410,7 @@
     <!-- Copyright -->
     <section id="copyright">
         <div class="container text-center text-white">
-            <small>Copyright &copy; Anthony Moreno 2020</small>
+            <small>Copyright &copy; Anthony Moreno <span id="year"></span></small>
         </div>
     </section>
 
@@ -420,4 +425,13 @@
             target: '.navbar';
         });
     </script>
+
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+    <script src="js/index.js">
+    </script>
+
 </body></html>
