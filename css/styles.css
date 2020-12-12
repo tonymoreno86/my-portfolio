@@ -88,9 +88,7 @@ html {
     border-radius: 1rem;
 }
 
-.divider-custom .divider-custom-line:first-child {
-    margin-right: 1rem;
-}
+
 
 .divider-custom .divider-custom-line:last-child {
     margin-left: 1rem;
@@ -123,8 +121,7 @@ html {
 /*-------- Portfolio  --------*/
 
 #portfolio {
-    padding: 13rem 0;
-    height: 100vh;
+    padding: 5rem;
 }
 
 #portfolio h2 {
