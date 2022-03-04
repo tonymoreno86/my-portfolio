@@ -1,436 +1,1076 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Tony Moreno - Portfolio</title>
+    <meta name="description" content="Bolby - Portfolio/CV/Resume HTML Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="https://via.placeholder.com/32x32">
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="images/favicon%20.ico" type="image/x-icon">
-    <link rel="icon" href="images/favicon%20.ico" type="image/x-icon">
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
-
-    <!-- Font Awersome -->
-    <link href="fontawesome/css/all.css" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-
-    <title>Anthony Moreno | Portfolio</title>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="80" id="#home">
+<body class="dark">
 
-    <!-- Navbar -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="outer">
+            <!-- Google Chrome -->
+            <div class="infinityChrome">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <!-- Safari and others -->
+            <div class="infinity">
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+            <!-- Stuff -->
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                        <feBlend in="SourceGraphic" in2="goo" />
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <!-- mobile header -->
+    <header class="mobile-header-2">
         <div class="container">
-            <a href="#" class="navbar-brand text-uppercase" id="home">anthony moreno</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">&#9776;</span>
-            </button>
+            <!-- menu icon -->
+            <div class="menu-icon d-inline-flex mr-4">
+                <button>
+                    <span></span>
+                </button>
+            </div>
+            <!-- logo image -->
+            <div class="site-logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="Bolby" />
+                </a>
+            </div>
+        </div>
+    </header>
 
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto text-uppercase align-items-center">
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+    <!-- desktop header -->
+    <header class="desktop-header-2 d-flex align-items-start flex-column">
+
+        <!-- logo image -->
+        <div class="site-logo">
+            <a href="index.html">
+                <img src="images/logo-b-light.svg" alt="Bolby" />
+            </a>
+        </div>
+
+        <!-- main menu -->
+        <nav>
+            <ul class="vertical-menu scrollspy">
+                <li class="active"><a href="#home"><i class="icon-home"></i></a></li>
+                <li><a href="#about"><i class="icon-user-following"></i></a></li>
+                <li><a href="#services"><i class="icon-briefcase"></i></a></li>
+                <li><a href="#experience"><i class="icon-graduation"></i></a></li>
+                <li><a href="#works"><i class="icon-layers"></i></a></li>
+                <!--                <li><a href="#blog"><i class="icon-note"></i></a></li>-->
+                <li><a href="#contact"><i class="icon-bubbles"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- site footer -->
+        <!--
+	<div class="footer">
+		 copyright text 
+		<span class="copyright">© 2020 Bolby Template.</span>
+	</div>
+-->
+
+    </header>
+
+    <!-- main layout -->
+    <main class="content-2">
+
+        <!-- section home -->
+        <section id="home" class="home d-flex align-items-center">
+            <div class="container">
+
+                <!-- intro -->
+                <div class="intro">
+                    <!-- avatar image -->
+                    <img src="images/me.png" alt="Tony Moreno" class="mb-4 main-img" />
+
+                    <!-- info -->
+                    <h1 class="mb-2 mt-0">Tony Moreno</h1>
+                    <span>I'm a <span class="text-rotating">Email Developer, Front-End developer, iOS Developer in Progress</span></span>
+
+                    <!-- social icons -->
+                    <ul class="social-icons light list-inline mb-0 mt-4">
+                        <li class="list-inline-item"><a href="https://www.instagram.com/tonym03/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li class="list-inline-item"><a href="https://twitter.com/TonyCodes03" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/tonymoreno86" target="_blank"><i class="fab fa-github"></i></a></li>
+                    </ul>
+
+                    <!-- buttons -->
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-default">Hire me</a>
+                    </div>
+                </div>
+
+                <!-- scroll down mouse wheel -->
+                <div class="scroll-down">
+                    <a href="#about" class="mouse-wrapper">
+                        <span>Scroll Down</span>
+                        <span class="mouse">
+                            <span class="wheel"></span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- parallax layers -->
+                <div class="parallax" data-relative-input="true">
+
+                    <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg">
+                        <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg">
+                        <rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#FF4C60" fill-rule="evenodd">
+                            <path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z" />
+                            <path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z" />
+                        </g>
+                    </svg>
+
+                    <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg">
+                        <rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd" />
+                    </svg>
+
+                    <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="#44D7B6" fill-rule="evenodd">
+                            <path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z" />
+                            <path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z" />
+                        </g>
+                    </svg>
+
+                    <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd" />
+                    </svg>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section about -->
+        <section id="about">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">About Me</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row">
+
+                    <div class="col-md-3">
+                        <div class="text-center text-md-left">
+                            <!-- avatar image -->
+                            <img src="images/Tony.jpg" alt="Bolby" class="about-img" />
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-9 triangle-left-md triangle-top-sm">
+                        <div class="rounded bg-dark shadow-light padding-30">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <!-- about text -->
+                                    <p>Hi 👋 and thanks for visiting. My name is Tony, and I am a Frontend Developer specalizing in Email Development. I love bringing Email/Web designs to life with code. I am currently learning iOS App Development, so stay tuned for those projects.</p>
+                                    <div class="mt-3">
+                                        <a href="files/Anthony_Moreno_Dev_Res.pdf" class="btn btn-default" download>Download Resume</a>
+                                    </div>
+                                    <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <!-- skill item -->
+                                    <div class="skill-item">
+                                        <div class="skill-info clearfix">
+                                            <h4 class="float-left mb-3 mt-0">Web Development</h4>
+                                            <span class="float-right">80%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" data-color="#FFD15C">
+                                            </div>
+                                        </div>
+                                        <div class="spacer" data-height="20"></div>
+                                    </div>
+
+                                    <!-- skill item -->
+                                    <div class="skill-item">
+                                        <div class="skill-info clearfix">
+                                            <h4 class="float-left mb-3 mt-0">Email Development</h4>
+                                            <span class="float-right">90%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" data-color="#FF4C60">
+                                            </div>
+                                        </div>
+                                        <div class="spacer" data-height="20"></div>
+                                    </div>
+
+                                    <!-- skill item -->
+                                    <div class="skill-item">
+                                        <div class="skill-info clearfix">
+                                            <h4 class="float-left mb-3 mt-0">iOS App Development</h4>
+                                            <span class="float-right">5%</span>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="5" data-color="#6C6CE5">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- row end -->
+
+                <div class="spacer" data-height="70"></div>
+
+                <div class="row">
+
+                    <div class="col-md-4 col-sm-6">
+                        <!-- fact item -->
+                        <div class="fact-item">
+                            <span class="icon icon-fire"></span>
+                            <div class="details">
+                                <h3 class="mb-0 mt-0 number"><em class="count">163</em></h3>
+                                <p class="mb-0">Projects completed</p>
+                            </div>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <!-- fact item -->
+                        <div class="fact-item">
+                            <span class="icon icon-cup"></span>
+                            <div class="details">
+                                <h3 class="mb-0 mt-0 number"><em class="count">1203</em></h3>
+                                <p class="mb-0">Cups of coffee<br />
+                                    <small>(Lost count to be honest) 🙃 </small>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                        <!-- fact item -->
+                        <div class="fact-item">
+                            <span class="icon icon-people"></span>
+                            <div class="details">
+                                <h3 class="mb-0 mt-0 number"><em class="count">163</em></h3>
+                                <p class="mb-0">Satisfied clients</p>
+                            </div>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section services -->
+        <section id="services">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">Services</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <!-- service box -->
+                        <div class="service-box rounded data-background padding-30 text-center text-light shadow-blue" data-color="#6C6CE5">
+                            <i class="fas fa-regular fa-envelope fa-3x mb-1"></i>
+                            <h3 class="mb-3 mt-0">Email Development</h3>
+                            <p class="mb-0">I will turn your design into a live email that works accross all devices and popular email clients.</p>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- service box -->
+                        <div class="service-box rounded data-background padding-30 text-center shadow-yellow" data-color="#F9D74C">
+                            <i class="fas fa-solid fa-laptop-code fa-3x"></i>
+                            <h3 class="mb-3 mt-0">Web Development</h3>
+                            <p class="mb-0">I will turn your Figma/PSD into a live website using HTML, CSS Javscript, and Bootstrap.</p>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <!-- service box -->
+                        <div class="service-box rounded data-background padding-30 text-center text-light shadow-pink" data-color="#F97B8B">
+                            <i class="fab fa-apple fa-3x mb-1"></i>
+                            <h3 class="mb-3 mt-0">iOS App Development</h3>
+                            <p class="mb-0">Coming Soon</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-5 text-center">
+                    <p class="mb-0">Looking for a custom job? <a href="#contact">Click here</a> to contact me! 👋</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section experience -->
+        <section id="experience">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">Experience</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <!-- timeline wrapper -->
+                        <div class="timeline edu bg-dark rounded shadow-light padding-30 overflow-hidden">
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp">
+                                <div class="content">
+                                    <span class="time">2019 - Present</span>
+                                    <h3 class="title">Frontend Developer Certification</h3>
+                                    <p>I successfully completed the <a href="https://scrimba.com/" target="_blank">Scrimba</a> Frontend Developer Career path where I learned HTML, CSS, JavaScript, and React. I continue to look back at the lessons when I need a refresher and to stay up to date with technologies.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="content">
+                                    <span class="time">2019 - Present</span>
+                                    <h3 class="title">Email Mastery Certification</h3>
+                                    <p>Completed the HTML Email Mastery course from <a href="https://www.udemy.com/course/html-email/" target="_blank">Udemy</a>. Learned how to develope emails that work accross multiple email clients using tables. </p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="content">
+                                    <span class="time">2022</span>
+                                    <h3 class="title">iOS App Development</h3>
+                                    <p>Currently taking an <a href="https://www.udemy.com/course/ios-13-app-development-bootcamp/" target="_blank">iOS Development</a> bootcamp to learn how to build mobile apps for iPhones.</p>
+                                </div>
+                            </div>
+
+                            <!-- main line -->
+                            <span class="line"></span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <!-- responsive spacer -->
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+
+                        <!-- timeline wrapper -->
+                        <div class="timeline exp bg-dark rounded shadow-light padding-30 overflow-hidden">
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp">
+                                <div class="content">
+                                    <span class="time">06/2020 - Present</span>
+                                    <h3 class="title">Email Developer - <small>Activision</small></h3>
+                                    <p>Responsible for all CRM Email marketing campaigns for video games such as Call of Duty, Tony Hawk Pro Skater, and Crash Bandicoot. Duties include coding, creating workflows with selected audience, A/B testing and deploying emails.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="content">
+                                    <span class="time">03/2021 - 09/2021</span>
+                                    <h3 class="title">Email Developer - <small>Drawbackwards</small></h3>
+                                    <p>Used the MJML Email framework to develop over 100 components email templates based on clients Figma designs. Push all components, templates and updates to GitHub. Tested all emails using Litmus.
+                                        In charge of creating new Email Design System using Taxi for Email ESP. Added Taxi syntax/scripting language to individual HTML components to make them dynamic and editable in the Taxi platform.</p>
+                                </div>
+                            </div>
+
+                            <!-- timeline item -->
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="content">
+                                    <span class="time">04/2021 - 08/2021</span>
+                                    <h3 class="title">Digital Developer - <small>Mantera Media</small></h3>
+                                    <p>Develop and maintain fully responsive templates and individual emails via best in class HTML/CSS for various car dealerships such as Selma Honda, Jeep, Dodge, Hyundai, Nissan, Mazda, KIA, and Chevy. Test all email templates with Email on Acid.</p>
+                                </div>
+                            </div>
+
+                            <!-- main line -->
+                            <span class="line"></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section works -->
+        <section id="works">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">Recent works</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <!-- portfolio filter (desktop) -->
+                <ul class="portfolio-filter list-inline wow fadeInUp">
+                    <li class="current list-inline-item" data-filter="*">Everything</li>
+                    <li class="list-inline-item" data-filter=".email">Email</li>
+                    <li class="list-inline-item" data-filter=".web">Web</li>
+                    <li class="list-inline-item" data-filter=".ios">iOS</li>
+                    <!--                    <li class="list-inline-item" data-filter=".branding">Wordpress</li>-->
                 </ul>
+
+                <!-- portfolio filter (mobile) -->
+                <div class="pf-filter-wrapper">
+                    <select class="portfolio-filter-mobile">
+                        <option value="*">Everything</option>
+                        <option value=".email">Email</option>
+                        <option value=".web">Web</option>
+                        <option value=".design">iOS</option>
+                        <!--                        <option value=".branding">Branding</option>-->
+                    </select>
+                </div>
+
+                <!-- portolio wrapper -->
+                <div class="row portfolio-wrapper">
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item email">
+                        <a href="#small-dialog1" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Email</span>
+                                    <h4 class="title">Microsoft Windows 11 Series</h4>
+                                    <span class="more-button">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/windows_thumb.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog1" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/ms_windows11_email.png" alt="Title" />
+                            </div>
+                            <h2>Microsoft Windows 11 Series</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="#" class="btn btn-default">View on Dribbble</a>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item email">
+                        <a href="#small-dialog" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Email</span>
+                                    <h4 class="title">Foo.software Email Series</h4>
+                                    <span class="more-button"><i class="fa-regular fa-envelope"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/foo_thumb.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/foo.png" alt="Windows 11 Email" />
+                            </div>
+
+                            <h2>Foo.software Email Series</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="#" class="btn btn-default">View Live</a>
+                            <a href="#" class="btn btn-default">View on Github</a>
+                            <a href="#" class="btn btn-default">EOA</a>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item email">
+                        <a href="#small-dialog2" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Email</span>
+                                    <h4 class="title">Slickdeals Welcome Email</h4>
+                                    <span class="more-button"><i class="fa-regular fa-envelope"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/slickdeals_thumb.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog2" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/slickdeals.png" alt="Windows 11 Email" />
+                            </div>
+
+                            <h2>Slickdeals Welcome Email</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="#" class="btn btn-default">View Live</a>
+                            <a href="#" class="btn btn-default">View on Github</a>
+                            <a href="#" class="btn btn-default">EOA</a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item email">
+                        <a href="#small-dialog3" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Email</span>
+                                    <h4 class="title">Disney Plus Clone</h4>
+                                    <span class="more-button"><i class="fa-regular fa-envelope"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/disney_thumb.png" alt="Portfolio-title" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog3" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/wanda-vision.png" alt="Windows 11 Email" />
+                            </div>
+
+                            <h2>Disney Plus Clone</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="#" class="btn btn-default">View Live</a>
+                            <a href="#" class="btn btn-default">View on Github</a>
+                            <a href="#" class="btn btn-default">EOA</a>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item web">
+                        <a href="#small-dialog4" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Web</span>
+                                    <h4 class="title">VTC Training</h4>
+                                    <span class="more-button"><i class="fa-solid fa-code"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/vtc_thumb.png" alt="Portfolio-title" style="height: 213px" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog4" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/vtc_full.png" alt="Windows 11 Email" />
+                            </div>
+
+                            <h2>VTC Training</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="https://www.vtctraining.com" class="btn btn-default" target="_blank">View Live</a>
+                            <a href="#" class="btn btn-default" target="_blank">View on Github</a>
+                        </div>
+                    </div>
+
+                    <!-- portfolio item -->
+                    <div class="col-md-4 col-sm-6 grid-item web">
+                        <a href="#small-dialog5" class="work-content">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Web</span>
+                                    <h4 class="title">East Los Tacos</h4>
+                                    <span class="more-button"><i class="fa-solid fa-code"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/eastlos_thumb.png" alt="Portfolio-title" style="height: 213px" />
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div id="small-dialog5" class="white-popup zoom-anim-dialog mfp-hide">
+                            <div class="modal-img-container">
+                                <img src="images/eastlos_full.png" alt="Windows 11 Email" />
+                            </div>
+
+                            <h2>East Los Tacos</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam hendrerit nibh in massa semper rutrum. In rhoncus eleifend mi id tempus.</p>
+                            <p>Donec consectetur, libero at pretium euismod, nisl felis lobortis urna, id tristique nisl lectus eget ligula.</p>
+                            <a href="http://www.eastlostacos.co" class="btn btn-default" target="_blank">View Live</a>
+                            <a href="#" class="btn btn-default">View on Github</a>
+                            <a href="#" class="btn btn-default">EOA</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- more button -->
+                <!--
+                <div class="load-more text-center mt-4">
+                    <a href="javascript:" class="btn btn-default"><i class="fas fa-spinner"></i> Load more</a>
+-->
+                <!-- numbered pagination (hidden for infinite scroll) -->
+                <!--
+                    <ul class="portfolio-pagination list-inline d-none">
+                        <li class="list-inline-item">1</li>
+                        <li class="list-inline-item"><a href="works-2.html">2</a></li>
+                    </ul>
+                </div>
+-->
+
             </div>
-        </div>
-    </nav>
-    <!-- End Navbar -->
 
-    <!-- Hero Content -->
-    <section id="hero">
-        <div class="container">
-            <div class="d-flex align-items-center flex-column text-white">
-                <img src="images/avatar.svg" class="img-fluid align-middle wow bounceInLeft" data-wow-delay=".3s" data-wow-duration=".7s">
-                <h1 class="mt-3 text-uppercase wow bounceInRight" data-wow-delay=".3s">Welcome to my Page</h1>
-                <div class="divider-custom d-flex align-items-center justify-content-center">
-                    <div class="divider-custom-line wow bounceInRight" data-wow-delay=".3s"></div>
-                    <i class="far fa-file-code fa-2x wow bounceInRight" data-wow-delay=".3s"></i>
-                    <div class="divider-custom-line wow bounceInRight" data-wow-delay=".3s"></div>
-                </div>
-                <h3 class="wow bounceInRight" data-wow-delay=".3s">Front End Developer</h3>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Content -->
+        </section>
 
-    <!-- Portfolio -->
-    <section id="portfolio">
-        <div class="container">
-            <h2 class="text-center text-uppercase pb-2 wow fadeIn" data-wow-delay=".3s">Portfolio</h2>
-            <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
-                <div class="divider-custom-line wow fadeIn" data-wow-delay=".3s"></div>
-                <i class="far fa-file-code fa-2x wow fadeIn" data-wow-delay=".3s"></i>
-                <div class="divider-custom-line wow fadeIn" data-wow-delay=".3s"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#apple">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
+        <!-- section prices -->
+        <!--
+        <section id="prices">
+
+            <div class="container">
+
+                
+                <h2 class="section-title wow fadeIn">Pricing Plans</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row">
+
+                    <div class="col-md-4 pr-md-0 mt-md-4 mt-0">
+                        
+                        <div class="price-item bg-dark rounded shadow-light text-center">
+                            <img src="https://via.placeholder.com/80x80" alt="Regular" />
+                            <h2 class="plan">Basic</h2>
+                            <p>A Simple option but powerful to manage your business</p>
+                            <p>Email support</p>
+                            <h3 class="price"><em>$</em>9<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
                         </div>
-                        <img src="images/apple.png" class="img-fluid wow lightSpeedIn" data-wow-delay=".3s" data-wow-duration=".6s">
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#newsweek">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
+                    <div class="col-md-4 px-md-0 my-4 my-md-0">
+                        
+                        <div class="price-item bg-dark rounded shadow-light text-center best">
+                            <span class="badge">Recommended</span>
+                            <img src="https://via.placeholder.com/80x80" alt="Premium" />
+                            <h2 class="plan">Premium</h2>
+                            <p>Unlimited product including apps integrations and more features</p>
+                            <p>Mon-Fri support</p>
+                            <h3 class="price"><em>$</em>49<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
                         </div>
-                        <img src="images/newsweek.png" class="img-fluid wow lightSpeedIn" data-wow-delay=".6s" data-wow-duration=".6s">
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#airbnb">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
+                    <div class="col-md-4 pl-md-0 mt-md-4 mt-0">
+                        
+                        <div class="price-item bg-dark rounded shadow-light text-center">
+                            <img src="https://via.placeholder.com/80x80" alt="Ultimate" />
+                            <h2 class="plan">Ultimate</h2>
+                            <p>A wise option for large companies and individuals</p>
+                            <p>24/7 support</p>
+                            <h3 class="price"><em>$</em>99<span>Month</span></h3>
+                            <a href="#" class="btn btn-default">Get Started</a>
                         </div>
-                        <img src="images/airbnb.png" class="img-fluid wow lightSpeedIn" data-wow-delay=".9s" data-wow-duration=".6s">
                     </div>
+
                 </div>
 
-
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#vtc">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                        </div>
-                        <img src="images/vtc.png" class="img-fluid wow lightSpeedIn" data-wow-delay="1.2s" data-wow-duration=".6s">
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#diceGame">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                        </div>
-                        <img src="images/dicegame.png" class="img-fluid wow lightSpeedIn" data-wow-delay="1.5s" data-wow-duration=".6s">
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#keeperReactApp">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white">
-                                <i class="fas fa-code fa-2x"></i>
-                            </div>
-                        </div>
-                        <img src="images/keeperApp.png" class="img-fluid wow lightSpeedIn" data-wow-delay="1.8s" data-wow-duration=".6s">
-                    </div>
-                </div>
             </div>
 
+        </section>
+-->
 
-            <!-- Portfolio Modals -->
-            <div class="modal fade" id="apple" tabindex="-1" role="dialog" aria-labelledby="apple" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">Apple Clone</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/apple.png" class="img-fluid">
-                                        <p class="mt-4">This is my first Project. I was instructed to clone an older version of the Apple website using only HTML and CSS. It was a bit challenging at first, but eventually I was able to succeed.</p>
+        <!-- section testimonials -->
+        <section id="testimonials">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">Clients & Reviews</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <!-- testimonials wrapper -->
+                <div class="testimonials-wrapper">
+
+                    <!-- testimonial item -->
+                    <div class="testimonial-item text-center mx-auto">
+                        <div class="thumb mb-3 mx-auto">
+                            <img src="images/vtclogo.png" alt="customer-name" />
+                        </div>
+                        <h4 class="mt-3 mb-0">Dana Villander</h4>
+                        <span class="subtitle">President at VTC Training</span>
+                        <div class="bg-dark padding-30 shadow-light rounded triangle-top position-relative mt-4">
+                            <p class="mb-0">I hired Anthony Moreno to help us with our website and marketing. He exceeded our expectations. His assistance has been invaluable. </p>
+                        </div>
+                    </div>
+
+                    <!-- testimonial item -->
+                    <div class="testimonial-item text-center mx-auto">
+                        <div class="thumb mb-3 mx-auto">
+                            <img src="images/upwork.svg" alt="customer-name" />
+                        </div>
+                        <h4 class="mt-3 mb-0">Daniel Samoohi</h4>
+                        <span class="subtitle">Owner &amp; CEO at SmallBusinessLoanRates.com</span>
+                        <div class="bg-dark padding-30 shadow-light rounded triangle-top position-relative mt-4">
+                            <p class="mb-0"> Quality work done within the timeframe needed. Would recommend to others and will use again when needed. Thank you Anthony!</p>
+                        </div>
+                    </div>
+
+                    <!-- testimonial item -->
+                    <div class="testimonial-item text-center mx-auto">
+                        <div class="thumb mb-3 mx-auto">
+                            <img src="images/upwork.svg" alt="customer-name" />
+                        </div>
+                        <h4 class="mt-3 mb-0">Michael Sidler</h4>
+                        <span class="subtitle">Executive Leadership  at Drawbackwards</span>
+                        <div class="bg-dark padding-30 shadow-light rounded triangle-top position-relative mt-4">
+                            <p class="mb-0">Flexible and willing to tackle what's given to him. Capable of solving problems and digging into new software/tech and learning quickly.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-brands fa-html5 fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-brands fa-css3-alt fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-brands fa-js-square fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-brands fa-bootstrap fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-brands fa-apple fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <i class="fa-solid fa-envelope fa-3x"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <img src="images/EOA.jpeg" alt="Email on Acid" width="50" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6">
+                        <!-- client item -->
+                        <div class="client-item">
+                            <div class="inner">
+                                <img src="images/mjml.svg" alt="client-name" width="50" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- section blog -->
+        <!--
+        <section id="blog">
+
+            <div class="container">
+
+                
+                <h2 class="section-title wow fadeInUp">Latest Posts</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row blog-wrapper">
+
+                    <div class="col-md-4">
+                        
+                        <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
+                            <div class="thumb">
+                                <a href="#">
+                                    <span class="category">Reviews</span>
+                                </a>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/330x215" alt="blog-title" />
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="#">5 Best App Development Tool for Your Project</a></h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">09 February, 2020</li>
+                                    <li class="list-inline-item">Bolby</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        
+                        <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
+                            <div class="thumb">
+                                <a href="#">
+                                    <span class="category">Tutorial</span>
+                                </a>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/330x215" alt="blog-title" />
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="#">Common Misconceptions About Payment</a></h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">07 February, 2020</li>
+                                    <li class="list-inline-item">Bolby</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        
+                        <div class="blog-item rounded bg-dark shadow-light wow fadeIn">
+                            <div class="thumb">
+                                <a href="#">
+                                    <span class="category">Business</span>
+                                </a>
+                                <a href="#">
+                                    <img src="https://via.placeholder.com/330x215" alt="blog-title" />
+                                </a>
+                            </div>
+                            <div class="details">
+                                <h4 class="my-0 title"><a href="#">3 Things To Know About Startup Business</a></h4>
+                                <ul class="list-inline meta mb-0 mt-2">
+                                    <li class="list-inline-item">06 February, 2020</li>
+                                    <li class="list-inline-item">Bolby</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+-->
+
+        <!-- section contact -->
+        <section id="contact">
+
+            <div class="container">
+
+                <!-- section title -->
+                <h2 class="section-title wow fadeInUp">Get In Touch</h2>
+
+                <div class="spacer" data-height="60"></div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <!-- contact info -->
+                        <div class="contact-info">
+                            <h3 class="wow fadeInUp">Let's talk about everything!</h3>
+                            <p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:tonymoreno86@gmail.com">email</a>. 👋</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="contact-form mt-6" method="post" action="form/contact.php">
+
+                            <div class="messages"></div>
+
+                            <div class="row">
+                                <div class="column col-md-6">
+                                    <!-- Name input -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Your name" required="required" data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <a href="https://tonymoreno86.github.io/altcademy-Apple-Clone/" target="_blank"><button type="button" class="btn btn-primary mt-4 text-white">Live</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-
-            <div class="modal fade" id="newsweek" tabindex="-1" role="dialog" aria-labelledby="newsweek" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">Newsweek Clone</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/newsweek.png" class="img-fluid">
-                                        <p class="mt-4">This is my Newsweek clone. In this project, I learned to use Bootstrap 3, and was introduced to Bootstraps Grid system and media queries. This site is entirely responsive. I enjoyed learning about media queries and making websites responsive for all screen sizes.</p>
+                                <div class="column col-md-6">
+                                    <!-- Email input -->
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Email address" required="required" data-error="Email is required.">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <a href="https://tonymoreno86.github.io/altcademy-newsweek/" target="_blank"><button type="button" class="btn btn-primary mt-4">Live</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="modal fade" id="airbnb" tabindex="-1" role="dialog" aria-labelledby="airbnb" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">Airbnb Newsroom</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/airbnb.png" class="img-fluid">
-                                        <p class="mt-4">In this this project, I was introduced to Bootstrap 4 and Flexbox. I was tasked with replicating the Airbnb newsroom site using Bootstrap and very a bit of custom CSS.</p>
+                                <div class="column col-md-12">
+                                    <!-- Email input -->
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="InputSubject" name="InputSubject" placeholder="Subject" required="required" data-error="Subject is required.">
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <a href="https://tonymoreno86.github.io/altcademy-Airbnbpress/" target="_blank"><button type="button" class="btn btn-primary mt-4">Live</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="modal fade" id="vtc" tabindex="-1" role="dialog" aria-labelledby="vtc" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">VTC Training</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/vtc.png" class="img-fluid">
-                                        <p class="mt-4">This is one og my ongoing clients website.. VTC Training is a company that specilizes in combat skills and Rope Tactics. The site was made using HTML, CSS, JavaScript and Bootstrap. My client is very happy with his website.</p>
+                                <div class="column col-md-12">
+                                    <!-- Message textarea -->
+                                    <div class="form-group">
+                                        <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Message" required="required" data-error="Message is required."></textarea>
+                                        <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-                                <a href="https://www.vtctraining.com/index.html" target="_blank"><button type="button" class="btn btn-primary mt-4">Live</button></a>
                             </div>
-                        </div>
+
+                            <button type="submit" name="submit" id="submit" value="Submit" class="btn btn-default">Send Message</button><!-- Send Button -->
+
+                        </form>
+                        <!-- Contact Form end -->
                     </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="diceGame" tabindex="-1" role="dialog" aria-labelledby="diceGame" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">Dice Game</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/dicegame.png" class="img-fluid">
-                                        <p class="mt-4">This is a cool little project classified as a "Boss Level" challenge in a Udemy course I took. I used my JavaScript and DOM knowledge, and created a Dice game. There are two players, and every time the page is refreshed, the dice get thrown randomly, and each player has their own dice value. Visit the live site and take it for a spin.</p>
-                                    </div>
-                                </div>
-                                <a href="https://tonymoreno86.github.io/DiceGame" target="_blank"><button type="button" class="btn btn-primary mt-4">Live</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="keeperReactApp" tabindex="-1" role="dialog" aria-labelledby="keeperReactApp" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close position-absolute align-items-end mt-2 mr-2" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                        <div class="modal-body text-center">
-                            <div class="container">
-                                <div class="row d-flex justify-content-center">
-                                    <div class="col-lg-10">
-                                        <h2 class="text-uppercase mb-3">Keeper App</h2>
-                                        <div class="divider-custom d-flex align-items-center justify-content-center pb-2">
-                                            <div class="divider-custom-line"></div>
-                                            <i class="far fa-file-code fa-2x"></i>
-                                            <div class="divider-custom-line"></div>
-                                        </div>
-                                        <img src="images/keeperApp.png" class="img-fluid">
-                                        <p class="mt-4">This is my first ReactJs project. It is a Front End app that allows you to add and delete notes. In this project I learned alot! I was introduced to React hooks, state, destructuring objects and arrays, react forms, complex state, react components and component trees. I was also introduced to pre built components by adding dependencies with Material UI. A tough but fun project.</p>
-                                    </div>
-                                </div>
-                                <a href="https://codesandbox.io/embed/using-pre-built-react-components-g6c91?fontsize=14&hidenavigation=1&theme=dark" target="_blank"><button type="button" class="btn btn-primary mt-4">Live</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Portfolio Modals -->
-        </div>
-    </section>
-    <!-- End Portfolio -->
-
-    <!-- About Me -->
-    <section id="about">
-        <div class="container wow fadeIn" data-wow-delay=".5s">
-            <h2 class="text-center text-uppercase pb-2">About Me</h2>
-            <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
-                <div class="divider-custom-line"></div>
-                <i class="far fa-file-code fa-2x"></i>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 ml-auto">
-                    <p>Hi! My name is Anthony, most call me Tony, and I am Web Developer. I learned web development through online courses on Udemy. I have taken a few Full Stack development courses and have gotten certifications for completing them. Although I am familiar with Full Stack Development, I absolutely enjoy Front End Development.</p>
-                </div>
-                <div class="col-lg-4 mr-auto">
-                    <p>My goal is to be an expert Front-End Developer. While working on my first projects from the courses, I found myself truly enjoying my projects come to life! Altough frustrating at times, when I was done I'd say to myself wow, I did that? That was fun! Lets build some more! Becuase of my attitude and joy when a project is finished, I know Front-End is for me.</p>
-                </div>
-            </div>
-
-            <div class="container text-center">
-                <a href="https://github.com/tonymoreno86" target="_blank"><button type="button" class="btn btn-outline-light mt-5"><i class="fab fa-github-alt mr-2"></i> GitHub</button></a>
-            </div>
-        </div>
-    </section>
-    <!-- End About Me -->
-
-    <!-- Contact  -->
-    <section id="contact">
-        <div class="container wow zoomIn" data-wow-delay=".5s">
-            <h2 class="text-center text-uppercase pb-2">Contact Me</h2>
-            <div class="divider-custom d-flex align-items-center justify-content-center pb-3">
-                <div class="divider-custom-line"></div>
-                <i class="far fa-file-code fa-2x"></i>
-                <div class="divider-custom-line"></div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8 m-auto">
-                    <form action="https://formspree.io/xjvewyge" method="POST">
-                        <div class="form-group">
-                            <label for="name"></label>
-                            <input type="text" class="form-control" id="email" placeholder="Name" name="name" required>
-                        </div>
-                        <hr width="95%">
-                        <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" class="form-control" id="email" placeholder="Email Address" name="_replyto" required>
-                            <small id="emailHelp" class="form-text text-muted">I'll never share your email with anyone else.</small>
-                        </div>
-                        <hr width="95%">
-                        <div class="form-group">
-                            <label for="phone"></label>
-                            <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone" required>
-                        </div>
-                        <hr width="95%">
-                        <div class="form-group">
-                            <label for="message"></label>
-                            <textarea class="form-control" rows="4" placeholder="Message" name="message" required></textarea>
-                        </div>
-                        <hr width="95%" class="pt-2">
-                        <button type="submit" class="btn btn-primary">Send</button>
-                    </form>
 
                 </div>
+
             </div>
-        </div>
-    </section>
-    <!-- End Contact-->
 
-    <!-- Footer-->
-    <footer id="footer">
-        <div class="container wow fadeIn" data-wow-delay=".5s">
-            <div class="row text-white">
-                <div class="col-lg-4 mb-5  text-center">
-                    <h3 class="text-uppercase pb-2">Location</h3>
-                    <p>Los Angeles, CA<br>U.S.A</p>
-                </div>
+        </section>
 
-                <div class="col-lg-4 mb-5 text-center">
-                    <h3 class="text-uppercase pb-2">Around the Web</h3>
-                    <a href="https://www.facebook.com/BartndrTony?ref=bookmarks" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/tonym03/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/anthony-moreno-26858b5a/" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://twitter.com/TonyM_03" target="_blank" class="btn btn-outline-light btn-links mx-1 d-inline-flex align-items-center justify-content-center"><i class="fab fa-twitter"></i></a>
-                </div>
+        <div class="spacer" data-height="96"></div>
 
-                <div class="col-lg-4 mb-5 text-center">
-                    <h3 class="text-uppercase pb-2">About My services</h3>
-                    <p class="px-4">I can help you build your dream website. Contact me for more details.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer-->
+    </main>
 
-    <!-- Copyright -->
-    <section id="copyright">
-        <div class="container text-center text-white">
-            <small>Copyright &copy; Anthony Moreno <span id="year"></span></small>
-        </div>
-    </section>
+    <!-- Go to top button -->
+    <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script>
-        $('body').scrollspy({
-            target: '.navbar'
-        });
-    </script>
-
+    <!-- SCRIPTS -->
+    <script src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/infinite-scroll.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/validator.js"></script>
     <script src="js/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
-
-    <script src="js/index.js">
-    </script>
+    <script src="js/morphext.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/custom.js"></script>
 
 </body></html>
